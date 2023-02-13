@@ -5,7 +5,7 @@ import ConversationsDrawer from "./ConversationsDrawer";
 import styled from "styled-components";
 
 export default {
-  title: "Conversations Drawer/Overview",
+  title: "Organisms/Conversations Drawer",
   component: ConversationsDrawer,
   argTypes: {},
 } as ComponentMeta<typeof ConversationsDrawer>;

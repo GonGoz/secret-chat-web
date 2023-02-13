@@ -5,7 +5,7 @@ import ConversationItem from "./ConversationItem";
 import styled from "styled-components";
 
 export default {
-  title: "Conversations Drawer/ChatItem",
+  title: "Molecules/ChatItem",
   component: ConversationItem,
   argTypes: {},
 } as ComponentMeta<typeof ConversationItem>;

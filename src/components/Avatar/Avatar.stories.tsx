@@ -4,7 +4,7 @@ import { ComponentStory, ComponentMeta } from "@storybook/react";
 import Avatar from "./Avatar";
 
 export default {
-  title: "Avatar/Avatar",
+  title: "Atoms/Avatar",
   component: Avatar,
   argTypes: {},
 } as ComponentMeta<typeof Avatar>;

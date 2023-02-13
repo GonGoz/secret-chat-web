@@ -2,10 +2,9 @@ import React from "react";
 import { ComponentStory, ComponentMeta } from "@storybook/react";
 
 import DrawerHeader from "./Header";
-import styled from "styled-components";
 
 export default {
-  title: "Conversations Drawer/Header",
+  title: "Atoms/Header",
   component: DrawerHeader,
   argTypes: {},
 } as ComponentMeta<typeof DrawerHeader>;

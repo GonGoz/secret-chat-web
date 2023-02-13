@@ -5,7 +5,7 @@ import AppSearchBar from "./SearchBar";
 import styled from "styled-components";
 
 export default {
-  title: "SearchBar/SearchBar",
+  title: "Atoms/SearchBar",
   component: AppSearchBar,
   argTypes: {
     onChange: {
@@ -14,26 +14,20 @@ export default {
   },
 } as ComponentMeta<typeof AppSearchBar>;
 
-const StoryWrapper = styled.div`
-  /* max-width: 600px; */
-`;
-
 const Template: ComponentStory<typeof AppSearchBar> = ({
   onChange,
   placeholder,
 }) => {
   const [search, setSearch] = useState("");
   return (
-    <StoryWrapper>
-      <AppSearchBar
-        value={search}
-        onChange={(v) => {
-          onChange(v);
-          setSearch(v);
-        }}
-        placeholder={placeholder}
-      />
-    </StoryWrapper>
+    <AppSearchBar
+      value={search}
+      onChange={(v) => {
+        onChange(v);
+        setSearch(v);
+      }}
+      placeholder={placeholder}
+    />
   );
 };
 
