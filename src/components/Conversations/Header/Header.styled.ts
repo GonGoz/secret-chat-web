@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const StyledHeader = styled.header`
+export default styled.header`
   font-size: 2rem;
   font-weight: 600;
   & > span {

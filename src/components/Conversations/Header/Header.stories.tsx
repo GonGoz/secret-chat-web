@@ -1,10 +1,10 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
 
-import DrawerHeader from "./Header";
+import DrawerHeader from './Header';
 
 export default {
-  title: "Atoms/Header",
+  title: 'Atoms/Header',
   component: DrawerHeader,
   argTypes: {},
 } as ComponentMeta<typeof DrawerHeader>;

@@ -1,15 +1,14 @@
-import React, { useState } from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-
-import AppSearchBar from "./SearchBar";
-import styled from "styled-components";
+/* eslint-disable react/prop-types */
+import React, { useState } from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import AppSearchBar from './SearchBar';
 
 export default {
-  title: "Atoms/SearchBar",
+  title: 'Atoms/SearchBar',
   component: AppSearchBar,
   argTypes: {
     onChange: {
-      action: "Value change",
+      action: 'Value change',
     },
   },
 } as ComponentMeta<typeof AppSearchBar>;
@@ -18,7 +17,7 @@ const Template: ComponentStory<typeof AppSearchBar> = ({
   onChange,
   placeholder,
 }) => {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   return (
     <AppSearchBar
       value={search}

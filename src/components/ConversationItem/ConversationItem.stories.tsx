@@ -1,11 +1,10 @@
-import React from "react";
-import { ComponentStory, ComponentMeta } from "@storybook/react";
-
-import ConversationItem from "./ConversationItem";
-import styled from "styled-components";
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+import styled from 'styled-components';
+import ConversationItem from './ConversationItem';
 
 export default {
-  title: "Molecules/ChatItem",
+  title: 'Molecules/ChatItem',
   component: ConversationItem,
   argTypes: {},
 } as ComponentMeta<typeof ConversationItem>;
@@ -23,7 +22,7 @@ const Template: ComponentStory<typeof ConversationItem> = (args) => (
 export const ChatItem = Template.bind({});
 ChatItem.args = {
   unreadCount: 0,
-  lastMessage: "Hi there, juste texting to test this component",
-  timestamp: "11:11",
-  title: "Core developer",
+  lastMessage: 'Hi there, juste texting to test this component',
+  timestamp: '11:11',
+  title: 'Core developer',
 };

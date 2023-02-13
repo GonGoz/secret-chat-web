@@ -1,13 +1,13 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const ChatItem = styled.li<{ isActive?: boolean }>`
+export default styled.li<{ isActive?: boolean }>`
   user-select: none;
   cursor: pointer;
   display: grid;
   padding: 10px 0;
   grid-template-areas:
-    "avatar name timestamp"
-    "avatar message counter";
+    'avatar name timestamp'
+    'avatar message counter';
   grid-template-columns: min-content minmax(200px, 1fr) 35px;
   column-gap: 1rem;
 

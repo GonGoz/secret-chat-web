@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { AvatarSize } from "./types";
+import styled from 'styled-components';
+import type { AvatarSize } from './types';
 
 const sizes: Record<AvatarSize, number> = {
   s: 20,
@@ -7,7 +7,7 @@ const sizes: Record<AvatarSize, number> = {
   l: 70,
 };
 
-export const AvatarContainer = styled.img<{ size: AvatarSize }>`
+export default styled.img<{ size: AvatarSize }>`
   height: ${({ size }) => `${sizes[size]}px`};
   width: auto;
   border-radius: 50%;

@@ -1,1 +1,1 @@
-export type AvatarSize = "s" | "m" | "l";
+export type AvatarSize = 's' | 'm' | 'l';

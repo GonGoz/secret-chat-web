@@ -1,6 +1,6 @@
-import React from "react";
-import Avatar from "../Avatar/Avatar";
-import { ChatItem } from "./ConversationItem.styled";
+import React from 'react';
+import Avatar from '../Avatar/Avatar';
+import ChatItem from './ConversationItem.styled';
 
 export interface ConversationItemProps {
   profileImg?: string;
@@ -17,16 +17,15 @@ const ConversationItem: React.FC<ConversationItemProps> = ({
   lastMessage,
   profileImg,
   timestamp,
-}) => {
-  return (
-    <ChatItem isActive>
-      <Avatar src={profileImg} />
-      <h2>{title}</h2>
-      <p>{lastMessage}</p>
-      <small>{timestamp}</small>
-      {!!unreadCount && <div>+{unreadCount}</div>}
-    </ChatItem>
-  );
-};
+  isActive,
+}) => (
+  <ChatItem isActive={isActive}>
+    <Avatar src={profileImg} />
+    <h2>{title}</h2>
+    <p>{lastMessage}</p>
+    <small>{timestamp}</small>
+    {!!unreadCount && <div>+{unreadCount}</div>}
+  </ChatItem>
+);
 
 export default ConversationItem;
