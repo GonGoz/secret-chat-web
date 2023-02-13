@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "chromatic": "chromatic --exit-zero-on-changes"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -31,6 +32,7 @@
     "@typescript-eslint/parser": "^5.51.0",
     "@vitejs/plugin-react": "^3.1.0",
     "babel-loader": "^8.3.0",
+    "chromatic": "^6.17.0",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -41,5 +43,7 @@
     "eslint-plugin-react-hooks": "^4.3.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "secret-chat-web@0.0.0"
 }
