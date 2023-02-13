@@ -1,0 +1,49 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "airbnb-typescript",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 14,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "plugins": ["react", "@typescript-eslint", "prettier"],
+  "rules": {
+    // Add prettier rules as eslint rules
+    "prettier/prettier": "error",
+    // Not required since React 17
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    // Disabling because I do prefer to use arrow functions for FC
+    "react/function-component-definition": "off",
+    // We use typescript interfaces for that
+    "react/require-default-props": "off",
+    // Mmm, why not?
+    "react/jsx-props-no-spreading": "off",
+    // Allow tabs when indenting
+    "no-tabs": ["error", { "allowIndentationTabs": true }],
+    // Exclude storybook from this rule
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": ["**/*.stories.*", "**/.storybook/**/*.*"],
+        "peerDependencies": true
+      }
+    ],
+    // Complaining when single line expressions e.g. true && <img />
+    // Prettier already takes care of this anyway
+    "react/jsx-one-expression-per-line": "off"
+  }
+}

@@ -1,0 +1,19 @@
+import React from 'react';
+import { ComponentStory, ComponentMeta } from '@storybook/react';
+
+import DrawerHeader from './Header';
+
+export default {
+  title: 'Atoms/Header',
+  component: DrawerHeader,
+  argTypes: {},
+} as ComponentMeta<typeof DrawerHeader>;
+
+const Template: ComponentStory<typeof DrawerHeader> = (args) => (
+  <DrawerHeader {...args} />
+);
+
+export const Header = Template.bind({});
+Header.args = {
+  chatsCount: 15,
+};
